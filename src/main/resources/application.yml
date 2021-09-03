@@ -1,6 +1,7 @@
 server:
   port: 1234
 
+
 management:
   endpoint:
     auditevents:
@@ -9,6 +10,8 @@ management:
       show-details: always
 
 spring:
+  application:
+    name: demo-springboot
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/springboot

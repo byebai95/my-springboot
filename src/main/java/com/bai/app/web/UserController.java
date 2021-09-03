@@ -21,4 +21,9 @@ public class UserController {
     public User getUserInfoById(@RequestParam("uid")Long uid){
         return userService.getUserInfoById(uid);
     }
+
+    @GetMapping
+    public String getMessage(){
+        return "Hello,World";
+    }
 }
